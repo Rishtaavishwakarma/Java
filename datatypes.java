@@ -1,6 +1,12 @@
 
 public class datatypes {
 
+    //instance variable 
+    int num = 1234;
+    //Class/Static Variables
+    public String friend;
+//local variables
+
     public void Dt() {
         // Corrected data types and values
         //int a =7983759724;
@@ -14,6 +20,7 @@ public class datatypes {
         float g = 2.3f; // float values must end with 'f'
         double h = 23.45;
         String name = "Rishta";
+        friend = "Mansi"; //Class/Static Variables
 
         // Printing values (optional)
         System.out.println("int = " + a);
@@ -29,6 +36,9 @@ public class datatypes {
         System.out.println("\ng = " + g);
         System.out.println("h = " + h);
         System.out.println("String name = " + name);
+        System.out.println("instance varible int = " + num);//instance varible
+        System.out.println("Static variable string = " + friend);//Static variable
+
     }
 
     public static void main(String[] args) {
