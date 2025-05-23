@@ -8,5 +8,6 @@ public class InputOutput {
         System.out.println("Enter a number");
         int a = sc.nextInt();
         System.out.println(a);
+
     }
 }
