@@ -4,7 +4,7 @@ public class datatypes {
     //instance variable 
     int num = 1234;
     //Class/Static Variables
-    public String friend;
+    public static String friend;
 //local variables
 
     public void Dt() {
