@@ -111,6 +111,6 @@ public class cwh_01_loops {
         // Fact_for();
         // Fact_while();
         // Sum_mul();
-        SumOfEven_While();
+        // SumOfEven_While();
     }
 }
