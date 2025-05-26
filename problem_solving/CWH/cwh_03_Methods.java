@@ -99,6 +99,15 @@ public class cwh_03_Methods {
         return (c * 9 / 5) + 32;
     }
 
+    static int add(int... args) {
+        int result = 0;
+        System.out.println(args.getClass().getComponentType().getSimpleName());
+        for (int i : args) {
+            result += i;
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         // table(5);
         // Center_star(5);
@@ -110,5 +119,6 @@ public class cwh_03_Methods {
         // System.out.println(average);
         // Restar(5);
         // System.out.println("" + fahrenheit(35));
+        System.out.println(add(1, 2, 3, 4));
     }
 }
