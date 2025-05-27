@@ -9,24 +9,55 @@
 import java.util.Random;
 import java.util.Scanner;
 
-class Random_num {
+class Game {
 
-    public Random_num() {
+    private int number;
+    private int userGuess;
+    // private int noOfGuesses;
+
+    public Game() {
         Random r = new Random();
-        int n = r.nextInt(5);
+        this.number = r.nextInt(99) + 1;
+        // this.noOfGuesses = 0;
         // System.out.println("computer input" + n);
     }
 
-    public static void userInput() {
-
+    public void takeUserInput() {
+        System.out.println("Guess the number");
+        Scanner sc = new Scanner(System.in);
+        this.userGuess = sc.nextInt();
+        // noOfGuesses++;
     }
 
+    public boolean isCorrectNumber() {
+        if (userGuess == number) {
+            System.out.println("you win");
+            return true;
+        } else if (userGuess < number) {
+            System.out.println("too low ..");
+        } else {
+            System.out.println("Too high ..");
+        }
+        return false;
+    }
+
+    // public int getNoOfGuesses() {
+    //     return noOfGuesses;
+    // }
+    // public void setNoOfGuesses(int guesses) {
+    //     this.noOfGuesses = guesses;
+    // }
 }
 
 class cwh_05_game1 {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Random_num rn = new Random_num();
+        Game g = new Game();
+        boolean isCorrect = false;
+        while (!isCorrect) {
+            g.takeUserInput();
+            isCorrect = g.isCorrectNumber();
+        }
+
     }
 }
